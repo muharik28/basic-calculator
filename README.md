@@ -1,3 +1,31 @@
+# Concept Basic Architecture
+
+```text
+          ┌─────────────────┐
+          │      main       │
+          │   Composition   │
+          │      Root       │
+          └────────┬────────┘
+                   │
+                   │ inject
+                   ▼
+          ┌─────────────────┐
+          │    Calculator   │
+          │    Service      │
+          └────────┬────────┘
+                   │
+                   │ depends on
+                   ▼
+          ┌─────────────────┐
+          │    Operation    │
+          │    Interface    │
+          └────────┬────────┘
+                   │
+      ┌────────────┼────────────┐
+      ▼            ▼            ▼
+Addition     Subtraction   Multiplication
+```
+
 # Flow Dependency Injection
 
 ```text
